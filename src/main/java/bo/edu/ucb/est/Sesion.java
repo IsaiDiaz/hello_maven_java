@@ -16,8 +16,8 @@ public class Sesion {
             Scanner tc=new Scanner(System.in);
             String codigo = null;
             int PIN = -1;
-            System.out.println("Ingrese su codigo y PIN");
-            System.out.println("Codigo: ");
+            System.out.println("Ingrese su código y PIN");
+            System.out.println("Código: ");
             codigo = tc.nextLine();
             System.out.println("PIN: ");
             PIN = tc.nextInt();
@@ -46,7 +46,7 @@ public class Sesion {
     public void menu(){
         try {
             Scanner tc=new Scanner(System.in);
-            System.out.println("Menù de Opciones:\n1: Ver Saldo\n2: Retirar dinero\n3: Depositar dinero\n4: Salir");
+            System.out.println("Menú de Opciones:\n1: Ver Saldo\n2: Retirar dinero\n3: Depositar dinero\n4: Salir");
             System.out.print("Selección: ");
             int o = tc.nextInt();
             switch (o) {
@@ -78,7 +78,7 @@ public class Sesion {
     //System.out.println("Cuenta "+(i+1)+": \nNumero de Cuenta: "+cuentas[i].getNroCuenta()+"\nMoneda: "+cuentas[i].getTipoMoneda()+"\nTipo: "+cuentas[i].getTipo()+"\nSaldo: "+cuentas[i].getSaldo());
     public void verSaldo(){
         int c=clientes[clienteActual].mostrarCuentas();
-        System.out.println("Cuenta "+(c+1)+": \nNumero de Cuenta: "+cuentas[c].getNroCuenta()+"\nMoneda: "+cuentas[c].getTipoMoneda()+"\nTipo: "+cuentas[c].getTipo()+"\nSaldo: "+cuentas[c].getSaldo()+"\n\n");
+        System.out.println("Cuenta "+(c+1)+": \nNúmero de Cuenta: "+cuentas[c].getNroCuenta()+"\nMoneda: "+cuentas[c].getTipoMoneda()+"\nTipo: "+cuentas[c].getTipo()+"\nSaldo: "+cuentas[c].getSaldo()+"\n\n");
     }
     public void retirarDinero(){
         Scanner tc=new Scanner(System.in);
